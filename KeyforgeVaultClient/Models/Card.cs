@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace KeyforgeVaultClient.Models
+﻿namespace KeyforgeVaultClient.Models
 {
     public class Card
     {
