@@ -18,11 +18,13 @@ namespace KeyforgeVaultClient.Models
 
         public string Id { get; set; }
 
-        public bool IsMyDeck { get; set; }
+        // Leaving these commented out for now unless there's a need to allow 
+        // people to pass in credentials
+        //public bool IsMyDeck { get; set; }
 
-        public bool IsMyFavorite { get; set; }
+        //public bool IsMyFavorite { get; set; }
 
-        public bool IsOnMyWatchlist { get; set; }
+        //public bool IsOnMyWatchlist { get; set; }
 
         public int CasualWins { get; set; }
 

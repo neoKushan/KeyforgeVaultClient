@@ -9,17 +9,13 @@ namespace TestConsole
         {
             var client = new KeyforgeVaultClient.KeyforgeVaultClient(null);
 
-            //var houses = await client.GetHouses();
+            var allDecks = client.SearchDecks();
 
-            //Console.WriteLine($"Found {houses.Count} houses");
-            //foreach (var house in houses)
-            //{
-            //    Console.WriteLine($"House: {house.Name}");
-            //}
-
-            var deck = await client.GetDeck(new Guid("3b6bfd61-29f2-4839-bb4d-e3664424d5d5"));
-
-            Console.WriteLine("Hello World!");
+            int count = 1;
+            foreach (var deck in allDecks)
+            {
+                Console.WriteLine($"Deck {count++}: {deck.Name}");
+            }
         }
     }
 }

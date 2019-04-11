@@ -5,17 +5,20 @@ using KeyforgeVaultClient.Responses.ResponseModels;
 namespace KeyforgeVaultClient.Responses
 {
     [DataContract]
-    internal class GetDeckResponse
+    internal class SearchDeckResponse
     {
         [DataMember(Name = "data")]
-        public ResponseDeck Deck { get; set; }
+        public List<ResponseDeck> Decks { get; set; }
+
+        [DataMember(Name = "count")]
+        public int Count { get; set; }
 
         [DataMember(Name = "_linked")]
-        public DeckLinked Linked { get; set; }
+        public SearchDeckLinked Linked { get; set; }
     }
 
     [DataContract]
-    internal class DeckLinked
+    internal class SearchDeckLinked
     {
         [DataMember(Name = "houses")]
         public IList<ResponseHouse> Houses { get; set; }
