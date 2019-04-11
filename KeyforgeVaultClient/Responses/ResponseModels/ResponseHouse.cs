@@ -6,7 +6,7 @@ namespace KeyforgeVaultClient.Responses.ResponseModels
     [DataContract]
     internal class ResponseHouse
     {
-        [DataMember(Name = "Id")] public string Id { get; set; }
+        [DataMember(Name = "id")] public string Id { get; set; }
 
         [DataMember(Name = "name")] public string Name { get; set; }
 
