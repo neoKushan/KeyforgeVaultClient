@@ -1,7 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Description>This is a simple client for querying the Keyforge Vault API.
+This API is undocumented, so expect the occasional breaking change.</Description>
+    <Copyright>This library is Copyrighted by its Author, Stephen Donaghy. Keyforge and all associations are copyright of Fantasy Flight games.</Copyright>
+    <PackageProjectUrl>https://github.com/neoKushan/KeyforgeVaultClient</PackageProjectUrl>
+    <PackageIconUrl>https://images-cdn.fantasyflightgames.com/filer_public/a6/7a/a67aee90-7579-4267-9c9a-0ee821529155/kf01_logos_faction_icon.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/neoKushan/KeyforgeVaultClient.git</RepositoryUrl>
+    <PackageReleaseNotes>Beta release</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
